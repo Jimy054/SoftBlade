@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SoftBlade.Model
 {
-    class PurchaseDetail
+    class PurchaseDetailModel
     {
         public int PurchaseDetailID { get; set; }
         public float Price { get; set; }
@@ -16,7 +16,7 @@ namespace SoftBlade.Model
         public float Discount { get; set; }
         public string Observation { get; set; }
         [ForeignKey("Purchase")]
-        public int PurchasesID { get; set; }
+        public int PurchaseID { get; set; }
         public ICollection<PurchaseModel> Purchase { get; set; }
 
         [ForeignKey("Prdocut")]

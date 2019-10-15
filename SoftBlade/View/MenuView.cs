@@ -77,5 +77,19 @@ namespace SoftBlade.View
             Form1.Instance.MetroPanel.Controls["ProductView"].BringToFront();
             Form1.Instance.MetroBack.Visible = true;
         }
+
+        private void metroTile7_Click(object sender, EventArgs e)
+        {
+            if (!Form1.Instance.MetroPanel.Controls.ContainsKey("PurchaseView"))
+            {
+                PurchaseView purchaseView = new PurchaseView
+                {
+                    Dock = DockStyle.Fill
+                };
+                Form1.Instance.MetroPanel.Controls.Add(purchaseView);
+            }
+            Form1.Instance.MetroPanel.Controls["PurchaseView"].BringToFront();
+            Form1.Instance.MetroBack.Visible = true;
+        }
     }
 }

@@ -23,6 +23,7 @@ namespace SoftBlade.View.Client
         ClientModel clientModel = new ClientModel();
         DataTable dtClient;
 
+
         private void btNew_Click(object sender, EventArgs e)
         {
             AddClient addClient = new AddClient();

@@ -60,9 +60,10 @@ namespace SoftBlade.View.Provider
                     MessageBox.Show("Registro Agregado Exitosamente", "Registro Agregado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
-                catch (Exception)
+                catch (SqlException error)
                 {
-
+                  MessageBox.Show(error.ErrorCode.ToString());
+                    
                     MessageBox.Show("Código o NIT Repetido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }

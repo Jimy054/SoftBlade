@@ -27,3 +27,7 @@ C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.Provider.Pro
 C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.Provider.UpdateProvider.resources
 C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.Product.AddProduct.resources
 C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.Product.ProductView.resources
+C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.Product.CanceledProduct.resources
+C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.Product.UpdateProduct.resources
+C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.Purchase.AddPurchase.resources
+C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.PurchaseView.resources

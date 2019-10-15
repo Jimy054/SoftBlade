@@ -21,14 +21,11 @@ namespace SoftBlade.Model
 
         public int Units { get; set; }
 
-
         public decimal Price { get; set; }
 
-        public float PriceSale { get; set; }
+        public decimal PriceSale { get; set; }
 
         public decimal Gain { get; set; }
-
-
         public string Image { get; set; }
 
         [ForeignKey("Category")]

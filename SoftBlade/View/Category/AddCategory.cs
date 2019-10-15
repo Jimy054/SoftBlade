@@ -20,6 +20,7 @@ namespace SoftBlade.View.Category
         public AddCategory()
         {
             InitializeComponent();
+            btnNew.Enabled = false;
         }
 
         private void btnNew_Click(object sender, EventArgs e)
@@ -99,7 +100,7 @@ namespace SoftBlade.View.Category
 
         private void txtCode_TextChanged(object sender, EventArgs e)
         {
-            if (txtCode.Text == "" || txtName.Text == "")
+            if ((txtCode.Text == "" && !ckCode.Checked) || txtName.Text == "")
             {
                 btnNew.Enabled = false;
             }
@@ -111,7 +112,7 @@ namespace SoftBlade.View.Category
 
         private void txtName_TextChanged(object sender, EventArgs e)
         {
-            if (txtCode.Text == "" || txtName.Text == "")
+            if ((txtCode.Text == "" && !ckCode.Checked) || txtName.Text == "")
             {
                 btnNew.Enabled = false;
             }
