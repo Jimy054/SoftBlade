@@ -38,17 +38,17 @@ namespace SoftBlade.View.Category
                     command.Parameters.AddWithValue("_code", categoryModel.Code);
                     command.Parameters.AddWithValue("_name", categoryModel.Name);
                     command.Parameters.AddWithValue("_automatically", false);
-                    try
-                    {
+                   // try
+                   // {
 
                         command.ExecuteNonQuery();
                         MessageBox.Show("Registro Agregado Exitosamente", "Registro Agregado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         this.Close();
-                    }
-                    catch (Exception)
-                    {
-                        MessageBox.Show("Código  Repetido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                   // }
+                   // catch (Exception)
+                   // {
+                    //    MessageBox.Show("Código  Repetido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //}
                 }
                 else
                 {

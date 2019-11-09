@@ -164,9 +164,9 @@
             this.button1.Font = new System.Drawing.Font("Verdana", 14F);
             this.button1.Image = global::SoftBlade.Properties.Resources.trash;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(730, 346);
+            this.button1.Location = new System.Drawing.Point(732, 357);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(272, 34);
+            this.button1.Size = new System.Drawing.Size(269, 34);
             this.button1.TabIndex = 9;
             this.button1.Text = "Categorias Eliminadas";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

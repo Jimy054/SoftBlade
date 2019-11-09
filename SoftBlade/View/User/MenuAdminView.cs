@@ -14,9 +14,9 @@ using SoftBlade.View.Product;
 
 namespace SoftBlade.View
 {
-    public partial class MenuView : MetroFramework.Controls.MetroUserControl
+    public partial class MenuAdminView : MetroFramework.Controls.MetroUserControl
     {
-        public MenuView()
+        public MenuAdminView()
         {
             InitializeComponent();
         }

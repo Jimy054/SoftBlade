@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -121,11 +136,29 @@
     <Compile Include="View\Client\UpdateClient.Designer.cs">
       <DependentUpon>UpdateClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\MenuView.cs">
+    <Compile Include="View\CreditNote\AddCreditNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CreditNote\AddCreditNote.Designer.cs">
+      <DependentUpon>AddCreditNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CreditNote\CreditNoteView.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="View\MenuView.Designer.cs">
-      <DependentUpon>MenuView.cs</DependentUpon>
+    <Compile Include="View\CreditNote\CreditNoteView.Designer.cs">
+      <DependentUpon>CreditNoteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\LoginView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\User\LoginView.Designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\MenuAdminView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\User\MenuAdminView.Designer.cs">
+      <DependentUpon>MenuAdminView.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Product\AddProduct.cs">
       <SubType>Form</SubType>
@@ -187,6 +220,18 @@
     <Compile Include="View\Purchase\PurchaseView.Designer.cs">
       <DependentUpon>PurchaseView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Purchase\UpdatePurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Purchase\UpdatePurchase.Designer.cs">
+      <DependentUpon>UpdatePurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\User\MenuUserView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="View\User\MenuUserView.Designer.cs">
+      <DependentUpon>MenuUserView.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\Category\AddCategory.resx">
       <DependentUpon>AddCategory.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,8 +269,17 @@
     <EmbeddedResource Include="View\Client\UpdateClient.resx">
       <DependentUpon>UpdateClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\MenuView.resx">
-      <DependentUpon>MenuView.cs</DependentUpon>
+    <EmbeddedResource Include="View\CreditNote\AddCreditNote.resx">
+      <DependentUpon>AddCreditNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CreditNote\CreditNoteView.resx">
+      <DependentUpon>CreditNoteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\User\LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\User\MenuAdminView.resx">
+      <DependentUpon>MenuAdminView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Product\AddProduct.resx">
       <DependentUpon>AddProduct.cs</DependentUpon>
@@ -256,6 +310,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Purchase\PurchaseView.resx">
       <DependentUpon>PurchaseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Purchase\UpdatePurchase.resx">
+      <DependentUpon>UpdatePurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\User\MenuUserView.resx">
+      <DependentUpon>MenuUserView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -318,6 +378,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\purchase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

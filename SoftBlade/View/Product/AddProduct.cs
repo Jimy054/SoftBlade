@@ -17,6 +17,14 @@ namespace SoftBlade.View.Product
 {
     public partial class AddProduct : MetroFramework.Forms.MetroForm
     {
+      
+
+        ProductModel productModel = new ProductModel();
+        SqlCommand sqlCommand;
+        SqlDataAdapter sqlData;
+
+
+
         public AddProduct()
         {
             InitializeComponent();
@@ -24,37 +32,26 @@ namespace SoftBlade.View.Product
             ComboboxFillProvider();
         }
 
-        ProductModel productModel = new ProductModel();
-        SqlCommand sqlCommand;
-
 
         //Category
         public void ComboboxFillCategory()
         {
-            sqlCommand = new SqlCommand("select name from Category  where Status='Ingresado'", Connection.SqlConnection());
-            SqlDataReader myReader;
-            
-                myReader = sqlCommand.ExecuteReader();
+            sqlData = new SqlDataAdapter("ListCategory", Connection.SqlConnection());
+            sqlData.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dtCategory = new DataTable();
+            sqlData.Fill(dtCategory);
+            cmbCategory.DataSource = dtCategory;
+            cmbCategory.DisplayMember = "nombre";
+         //   AutoCompleteStringCollection MyCollection = new AutoCompleteStringCollection();
+         //   cmbCategory.AutoCompleteCustomSource = MyCollection;
 
-                while (myReader.Read())
-                {
-                    string name = myReader.GetString(0);
-                    cmbCategory.Items.Add(name);
-                }
-          
         }
 
         private void cmbCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbCategory.SelectedIndex == 0)
-            {
-                AddCategory addCategory = new AddCategory();
-                addCategory.ShowDialog();
-                ComboboxFillCategory();
-            }
-            else
-            {
-                sqlCommand = new SqlCommand("select CategoryID from Category where  name='" + cmbCategory.Text + "'", Connection.SqlConnection());
+         
+
+            sqlCommand = new SqlCommand("select CategoryID from Category where  name='" + cmbCategory.Text + "'", Connection.SqlConnection());
                 SqlDataReader myReader;
                 myReader = sqlCommand.ExecuteReader();
                 while (myReader.Read())
@@ -62,7 +59,7 @@ namespace SoftBlade.View.Product
                     string id = myReader.GetInt32(0).ToString();
                     productModel.CategoryID = int.Parse(id);
                 }
-            }
+            
 
         }
 
@@ -148,7 +145,8 @@ namespace SoftBlade.View.Product
                 command.Parameters.AddWithValue("_automatically", false);
                 
                     command.ExecuteNonQuery();
-                    MessageBox.Show("Registro Agregado Exitosamente", "Registro Agregado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    command.ExecuteNonQuery();
+                MessageBox.Show("Registro Agregado Exitosamente", "Registro Agregado", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
               
 
@@ -178,6 +176,11 @@ namespace SoftBlade.View.Product
             }
         }
 
-      
+        private void btnCategory_Click(object sender, EventArgs e)
+        {
+            AddCategory addCategory = new AddCategory();
+            addCategory.ShowDialog();
+            ComboboxFillCategory();
+        }
     }
 }

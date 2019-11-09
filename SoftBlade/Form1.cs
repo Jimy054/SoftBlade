@@ -49,7 +49,7 @@ namespace SoftBlade
         {
             metroLink1.Visible = false;
             _instance = this;
-            MenuView mainMenu = new MenuView();
+            MenuAdminView mainMenu = new MenuAdminView();
             mainMenu.Dock = DockStyle.Fill;
             metroPanel1.Controls.Add(mainMenu);          
         }

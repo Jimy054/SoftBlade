@@ -38,7 +38,7 @@ namespace SoftBlade.View
             for (int i = 0; i < 5; i++)
             {
                 DataGridViewColumn column1 = purchaseGrid.Columns[i];
-                column1.Width = 188;
+                column1.Width = 126;
             }
         }
 
@@ -51,8 +51,8 @@ namespace SoftBlade.View
             {
                 SqlCommand command = new SqlCommand("GenerateCodePurchase", Connection.SqlConnection());
                 command.Parameters.AddWithValue("_PurchaseDate", DBNull.Value);
-                command.Parameters.AddWithValue("_PurchaseTotal", DBNull.Value);
-                command.Parameters.AddWithValue("_PurchaseReference", DBNull.Value);
+                command.Parameters.AddWithValue("_PurchaseTotal", 0);
+                command.Parameters.AddWithValue("_PurchaseReference", 0);
                 command.Parameters.AddWithValue("_ProviderID", DBNull.Value);
                 command.CommandType = CommandType.StoredProcedure;
                 command.ExecuteNonQuery();

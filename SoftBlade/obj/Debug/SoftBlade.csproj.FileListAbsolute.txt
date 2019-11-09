@@ -12,7 +12,6 @@ C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.csproj.CoreCompil
 C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.csproj.CopyComplete
 C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.exe
 C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.pdb
-C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.MenuView.resources
 C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.Category.AddCategory.resources
 C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.Category.CategoryView.resources
 C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.Category.CanceledCategory.resources
@@ -31,3 +30,9 @@ C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.Product.Canc
 C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.Product.UpdateProduct.resources
 C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.Purchase.AddPurchase.resources
 C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.PurchaseView.resources
+C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.CreditNote.AddCreditNote.resources
+C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.CreditNote.CreditNoteView.resources
+C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.Purchase.UpdatePurchase.resources
+C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.User.LoginView.resources
+C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.MenuAdminView.resources
+C:\Users\jimmy\Desktop\SoftBlade\SoftBlade\obj\Debug\SoftBlade.View.User.MenuUserView.resources

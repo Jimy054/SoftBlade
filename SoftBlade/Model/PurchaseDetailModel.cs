@@ -12,6 +12,10 @@ namespace SoftBlade.Model
         public int PurchaseDetailID { get; set; }
         public float Price { get; set; }
         public int Quantity { get; set; }
+
+        public float PriceWithoutIVA { get; set; }
+        public float IVA { get; set; }
+
         public float SubTotal { get; set; }
         public float Discount { get; set; }
         public string Observation { get; set; }

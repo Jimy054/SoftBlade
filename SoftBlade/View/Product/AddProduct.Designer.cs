@@ -42,6 +42,8 @@
             this.cmbProvider = new MetroFramework.Controls.MetroComboBox();
             this.btnNew = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.btnCategory = new System.Windows.Forms.Button();
+            this.btnProvider = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -78,7 +80,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(451, 180);
+            this.label4.Location = new System.Drawing.Point(451, 184);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 18);
             this.label4.TabIndex = 3;
@@ -140,7 +142,7 @@
             // 
             // 
             this.txtName.CustomButton.Image = null;
-            this.txtName.CustomButton.Location = new System.Drawing.Point(173, 2);
+            this.txtName.CustomButton.Location = new System.Drawing.Point(152, 2);
             this.txtName.CustomButton.Name = "";
             this.txtName.CustomButton.Size = new System.Drawing.Size(17, 17);
             this.txtName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -158,7 +160,7 @@
             this.txtName.SelectionLength = 0;
             this.txtName.SelectionStart = 0;
             this.txtName.ShortcutsEnabled = true;
-            this.txtName.Size = new System.Drawing.Size(193, 22);
+            this.txtName.Size = new System.Drawing.Size(172, 22);
             this.txtName.TabIndex = 7;
             this.txtName.UseSelectable = true;
             this.txtName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -170,7 +172,7 @@
             // 
             // 
             this.txtUnit.CustomButton.Image = null;
-            this.txtUnit.CustomButton.Location = new System.Drawing.Point(173, 2);
+            this.txtUnit.CustomButton.Location = new System.Drawing.Point(152, 2);
             this.txtUnit.CustomButton.Name = "";
             this.txtUnit.CustomButton.Size = new System.Drawing.Size(17, 17);
             this.txtUnit.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -188,7 +190,7 @@
             this.txtUnit.SelectionLength = 0;
             this.txtUnit.SelectionStart = 0;
             this.txtUnit.ShortcutsEnabled = true;
-            this.txtUnit.Size = new System.Drawing.Size(193, 22);
+            this.txtUnit.Size = new System.Drawing.Size(172, 22);
             this.txtUnit.TabIndex = 9;
             this.txtUnit.UseSelectable = true;
             this.txtUnit.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -208,9 +210,9 @@
             this.cmbCategory.ItemHeight = 23;
             this.cmbCategory.Items.AddRange(new object[] {
             "Agregar Categoría"});
-            this.cmbCategory.Location = new System.Drawing.Point(130, 289);
+            this.cmbCategory.Location = new System.Drawing.Point(130, 296);
             this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(224, 29);
+            this.cmbCategory.Size = new System.Drawing.Size(193, 29);
             this.cmbCategory.TabIndex = 38;
             this.cmbCategory.UseSelectable = true;
             this.cmbCategory.SelectedIndexChanged += new System.EventHandler(this.cmbCategory_SelectedIndexChanged);
@@ -221,9 +223,9 @@
             this.cmbProvider.ItemHeight = 23;
             this.cmbProvider.Items.AddRange(new object[] {
             "Agregar Proveedor"});
-            this.cmbProvider.Location = new System.Drawing.Point(553, 289);
+            this.cmbProvider.Location = new System.Drawing.Point(549, 296);
             this.cmbProvider.Name = "cmbProvider";
-            this.cmbProvider.Size = new System.Drawing.Size(204, 29);
+            this.cmbProvider.Size = new System.Drawing.Size(172, 29);
             this.cmbProvider.TabIndex = 39;
             this.cmbProvider.UseSelectable = true;
             this.cmbProvider.SelectedIndexChanged += new System.EventHandler(this.cmbProvider_SelectedIndexChanged);
@@ -254,11 +256,46 @@
             this.checkBox1.Text = "Generar Código";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
+            // btnCategory
+            // 
+            this.btnCategory.BackColor = System.Drawing.Color.White;
+            this.btnCategory.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCategory.FlatAppearance.BorderSize = 2;
+            this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategory.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategory.Image = global::SoftBlade.Properties.Resources.add;
+            this.btnCategory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCategory.Location = new System.Drawing.Point(344, 296);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Size = new System.Drawing.Size(44, 33);
+            this.btnCategory.TabIndex = 41;
+            this.btnCategory.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnCategory.UseVisualStyleBackColor = false;
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
+            // 
+            // btnProvider
+            // 
+            this.btnProvider.BackColor = System.Drawing.Color.White;
+            this.btnProvider.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnProvider.FlatAppearance.BorderSize = 2;
+            this.btnProvider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProvider.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProvider.Image = global::SoftBlade.Properties.Resources.add;
+            this.btnProvider.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProvider.Location = new System.Drawing.Point(733, 296);
+            this.btnProvider.Name = "btnProvider";
+            this.btnProvider.Size = new System.Drawing.Size(44, 33);
+            this.btnProvider.TabIndex = 42;
+            this.btnProvider.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnProvider.UseVisualStyleBackColor = false;
+            // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnProvider);
+            this.Controls.Add(this.btnCategory);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.cmbProvider);
             this.Controls.Add(this.cmbCategory);
@@ -296,5 +333,7 @@
         private MetroFramework.Controls.MetroComboBox cmbCategory;
         private MetroFramework.Controls.MetroComboBox cmbProvider;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Button btnCategory;
+        private System.Windows.Forms.Button btnProvider;
     }
 }

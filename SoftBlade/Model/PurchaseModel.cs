@@ -11,6 +11,8 @@ namespace SoftBlade.Model
     {
         public int PurchaseID { get; set; }
         public DateTime PurchaseDate { get; set; }
+        public float PriceWithoutIVA { get; set; }
+        public float IVA { get; set; }
         public float PurchaseTotal { get; set; }
         public string PurchaseReference { get; set; }
         public string Serie { get; set; }

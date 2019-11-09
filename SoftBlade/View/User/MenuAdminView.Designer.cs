@@ -1,6 +1,6 @@
 ﻿namespace SoftBlade.View
 {
-    partial class MenuView
+    partial class MenuAdminView
     {
         /// <summary> 
         /// Variable del diseñador necesaria.
@@ -35,6 +35,7 @@
             this.metroTile5 = new MetroFramework.Controls.MetroTile();
             this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.metroTile2 = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // metroTile4
@@ -61,13 +62,13 @@
             this.mtCategory.ActiveControl = null;
             this.mtCategory.BackColor = System.Drawing.Color.Gray;
             this.mtCategory.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.mtCategory.Location = new System.Drawing.Point(882, 3);
+            this.mtCategory.Location = new System.Drawing.Point(770, 3);
             this.mtCategory.Name = "mtCategory";
-            this.mtCategory.Size = new System.Drawing.Size(124, 236);
+            this.mtCategory.Size = new System.Drawing.Size(182, 236);
             this.mtCategory.TabIndex = 23;
             this.mtCategory.Text = "Categorías";
             this.mtCategory.TileImage = global::SoftBlade.Properties.Resources.categorias;
-            this.mtCategory.TileImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.mtCategory.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.mtCategory.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
             this.mtCategory.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
             this.mtCategory.UseCustomBackColor = true;
@@ -81,9 +82,9 @@
             // 
             this.metroTile7.ActiveControl = null;
             this.metroTile7.BackColor = System.Drawing.Color.Goldenrod;
-            this.metroTile7.Location = new System.Drawing.Point(525, 3);
+            this.metroTile7.Location = new System.Drawing.Point(477, 6);
             this.metroTile7.Name = "metroTile7";
-            this.metroTile7.Size = new System.Drawing.Size(351, 236);
+            this.metroTile7.Size = new System.Drawing.Size(287, 233);
             this.metroTile7.TabIndex = 22;
             this.metroTile7.Text = "Compras";
             this.metroTile7.TileImage = global::SoftBlade.Properties.Resources.purchase;
@@ -101,7 +102,7 @@
             this.metroTile6.BackColor = System.Drawing.Color.LightSkyBlue;
             this.metroTile6.Location = new System.Drawing.Point(152, 6);
             this.metroTile6.Name = "metroTile6";
-            this.metroTile6.Size = new System.Drawing.Size(367, 233);
+            this.metroTile6.Size = new System.Drawing.Size(319, 233);
             this.metroTile6.TabIndex = 21;
             this.metroTile6.Text = "Ventas";
             this.metroTile6.TileImage = global::SoftBlade.Properties.Resources.ventas;
@@ -119,7 +120,7 @@
             this.metroTile5.ForeColor = System.Drawing.Color.White;
             this.metroTile5.Location = new System.Drawing.Point(732, 242);
             this.metroTile5.Name = "metroTile5";
-            this.metroTile5.Size = new System.Drawing.Size(274, 110);
+            this.metroTile5.Size = new System.Drawing.Size(220, 110);
             this.metroTile5.TabIndex = 20;
             this.metroTile5.Text = "Provedores";
             this.metroTile5.TileImage = global::SoftBlade.Properties.Resources.proveedores;
@@ -168,10 +169,28 @@
             this.metroTile1.UseSelectable = true;
             this.metroTile1.UseTileImage = true;
             // 
+            // metroTile2
+            // 
+            this.metroTile2.ActiveControl = null;
+            this.metroTile2.BackColor = System.Drawing.Color.White;
+            this.metroTile2.Location = new System.Drawing.Point(958, 3);
+            this.metroTile2.Name = "metroTile2";
+            this.metroTile2.Size = new System.Drawing.Size(59, 352);
+            this.metroTile2.TabIndex = 25;
+            this.metroTile2.Text = "Estadisticas";
+            this.metroTile2.TileImage = global::SoftBlade.Properties.Resources.inicio;
+            this.metroTile2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold;
+            this.metroTile2.UseCustomBackColor = true;
+            this.metroTile2.UseSelectable = true;
+            this.metroTile2.UseTileImage = true;
+            // 
             // MenuView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.metroTile2);
             this.Controls.Add(this.metroTile4);
             this.Controls.Add(this.mtCategory);
             this.Controls.Add(this.metroTile7);
@@ -194,5 +213,6 @@
         private MetroFramework.Controls.MetroTile metroTile5;
         private MetroFramework.Controls.MetroTile metroTile3;
         private MetroFramework.Controls.MetroTile metroTile1;
+        private MetroFramework.Controls.MetroTile metroTile2;
     }
 }
